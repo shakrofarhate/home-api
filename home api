@@ -1,0 +1,18 @@
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55374714-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-55374714-1');
+    </script>
+
+    <script>
+        window.onerror = function (msg, url, line, column, errorObj) {
+            var req = new XMLHttpRequest();
+            var params = "msg=" + encodeURIComponent(msg) + '&url=' + encodeURIComponent(url) + "&line=" + line + "&column=" + column + "&err_object=" + (typeof errorObj === 'object' ? JSON.stringify(errorObj) : '') + '&ua=' + encodeURIComponent(window.navigator.userAgent);
+            req.open("GET", "/js/track?" + params);
+            req.send(null);
+        };
+    </script>
+            <meta name="robots" content="noindex,nofollow"/>
